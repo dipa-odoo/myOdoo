@@ -9,7 +9,9 @@ class Spaceship(models.Model):
     
     name = fields.Char("Name")
     description = fields.Text("Description")
-    taskType = fields.Selection("Task Type", selection=[('Internal','internal'),('External','external')])
+    taskType = fields.Selection("Task Type", selection=selection=[('regular', 'Regular'),('electrical','Electrical'),('nuclear','Nuclear')])
+    
+    #[('Internal','internal'),('External','external')]
     
     startTime = fields.Datetime("Start time", default = lambda self: fields.datetime.now(), required=True)
     endTime = fields.Datetime("End time", default = lambda self: fields.datetime.now(), required=True)
