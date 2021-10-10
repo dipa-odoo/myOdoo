@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 
 class Spaceship(models.Model):
-    _name = "academy.orgTask"
+    _name = "academy.orgtask"
     _description = "Organization tasks"
     
     name = fields.Char("Name")
