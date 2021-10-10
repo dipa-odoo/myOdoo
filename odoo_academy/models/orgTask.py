@@ -9,7 +9,7 @@ class Spaceship(models.Model):
     
     name = fields.Char("Name")
     description = fields.Text("Description")
-    taskType = fields.Selection("Task Type", selection=selection=[('regular', 'Regular'),('electrical','Electrical'),('nuclear','Nuclear')])
+    taskType = fields.Selection("Task Type", selection=[('regular', 'Regular'),('electrical','Electrical'),('nuclear','Nuclear')])
     
     #[('Internal','internal'),('External','external')]
     
