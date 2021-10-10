@@ -15,4 +15,4 @@ class Spaceship(models.Model):
     
     startTime = fields.Datetime(string="Start time", default = lambda self: fields.datetime.now(), required=True)
     endTime = fields.Datetime(string="End time", default = lambda self: fields.datetime.now(), required=True)
-    recurring = fields.Booleans(string="repeating",required=True, default=False)
+    recurring = fields.Boolean(string="repeating",required=True, default=False)
