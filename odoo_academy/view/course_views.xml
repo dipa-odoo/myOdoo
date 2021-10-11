@@ -9,7 +9,6 @@
                 <form string="Course Form">
                     <sheet>
                         <h1><field name="name"/></h1>
-                        
                         <group>
                             <group>
                                 <field name="active"/>
@@ -28,5 +27,30 @@
                 </form>
             </field>
         </record>
+        
+        
+        <record model="ir.ui.view" id="course_view_list">
+            <field name="name">academy.course.list</field>
+            <field name="model">academy.course</field>
+            <field name="arch" type="xml">
+                <tree string="Course List">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="level"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="course_view_searce">
+            <field name="name">academy.course.search</field>
+            <field name="model">academy.course</field>
+            <field name="arch" type="xml">
+                <search> 
+                    <field name="name"/>
+                    <field name="description"/>
+                </search>
+            </field>
+        </record>
+        
     </data>
 </odoo>

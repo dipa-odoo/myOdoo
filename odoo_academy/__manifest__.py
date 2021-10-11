@@ -14,6 +14,7 @@
     'version': '0.1',
     'depends': ['base'],
     'data':[
+        'view/academy_menuitems.xml',
         'view/course_views.xml'
     ],
     'demo': [
